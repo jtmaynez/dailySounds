@@ -1,0 +1,26 @@
+/** @format */
+
+@media (min-width: 50em) {
+  /* Adjust header logo size for smaller screens */
+  header img {
+    width: 80px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+  }
+  nav a {
+    flex: 100%;
+  }
+
+  #menu {
+    display: none;
+  }
+  .navigation,
+  .navigation.open {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

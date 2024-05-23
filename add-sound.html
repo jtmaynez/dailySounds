@@ -1,0 +1,85 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Daily Sounds" />
+    <meta name="author" content="Justin Maynes" />
+    <meta property="og:title" content="Daily Sounds Page" />
+    <meta property="og:type" content="Daily Sound official website" />
+    <meta property="og:image" content="images/daily-sounds.png" />
+    <!-- Fix the meta tags -->
+    <meta property="og:url" content="index.html" />
+    <title>Daily Sounds</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/daily-sound-fav.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/DailySoundsLogo.webp" alt="Liberty Lake Logo" />
+
+      <button id="menu"></button>
+      <nav class="navigation">
+        <a href="index.html">Downloads</a>
+        <a href="home.html">Home</a>
+        <a class="active" href="add-sound.html">Add Sound</a>
+        <a href="account.html">My Account</a>
+      </nav>
+    </header>
+    <h1>Upload Sound</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="title">Sound Title:</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+      </div>
+      <div class="form-group">
+        <label for="mp3">Upload MP3:</label>
+        <input type="file" id="mp3" name="mp3" accept=".mp3" required />
+      </div>
+      <div class="form-group submit-button">
+        <input type="submit" value="Upload" />
+      </div>
+    </form>
+
+    <footer>
+      <div class="footer-content">
+        <img src="images/DailySoundsLogo.webp" alt="Liberty Lake Logo" />
+        <div class="footer-text"></div>
+        <p id="lastModified"></p>
+        <p>Number of Visits: <span class="visits"></span></p>
+        <p id="year"></p>
+      </div>
+    </footer>
+    <script src="scripts/displaySound.js"></script>
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>

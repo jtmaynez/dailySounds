@@ -1,0 +1,68 @@
+{
+  "sounds": [
+    {
+      "imagewithHyperlink": {
+        "fileName": "hero_ds.jpeg",
+        "hyperlink": "images/hero_ds.jpeg"
+      },
+      "name": "Whipped Cream",
+      "author": "Jayden Hertz",
+      "description": "Ever get a can of whipped cream and just eat...",
+      "mp3": "audio/whipped_cream.mp3"
+    },
+    {
+      "name": "Inhale and Exhale Breathing",
+      "author": "Jayden Hertz",
+      "description": "This is what I do when I wake up in the morning....",
+      "mp3": "audio/inhale_exhale.mp3"
+    },
+    {
+      "name": "Taser",
+      "author": "Yasir Ihsan",
+      "description": "Taser sound effects for your future video or...",
+      "mp3": "audio/taser.mp3"
+    },
+    {
+      "name": "Oh Yeah",
+      "author": "Yasir Ihsan",
+      "description": "Ohhh Yeahhh that’s what I’m talking...",
+      "mp3": "audio/oh_yeah.mp3"
+    },
+    {
+      "name": "Lighter Flick",
+      "author": "Yasir Ihsan",
+      "description": "Flick Flick! Download...",
+      "mp3": "audio/lighter.mp3"
+    },
+    {
+      "name": "Flipping Book Pages",
+      "author": "Yasir Ihsan",
+      "description": "That’s what you sound like when you read...",
+      "mp3": "audio/book_pages.mp3"
+    },
+    {
+      "name": "FAT TOOT",
+      "author": "Yasir Ihsan",
+      "description": "This is the sound of a ripe, juicy, delicious...",
+      "mp3": "audio/fat_toot.mp3"
+    },
+    {
+      "name": "Blow Torch",
+      "author": "Yasir Ihsan",
+      "description": "You gonna burn down the house or what? Download...",
+      "mp3": "audio/blow_torch.mp3"
+    },
+    {
+      "name": "Bullet Shell Falling on Concrete",
+      "author": "Yasir Ihsan",
+      "description": "Now that’s what it sounds like for brass...",
+      "mp3": "audio/bullets_falling.mp3"
+    },
+    {
+      "name": "Explosive Diarrhea Soundscape",
+      "author": "Jayden Hertz",
+      "description": "This is the sound of a ripe, juicy, delicious...",
+      "mp3": "audio/explosive_diarrhea.mp3"
+    }
+  ]
+}

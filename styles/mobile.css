@@ -1,0 +1,273 @@
+/**
+ * Container for all sound entries
+ *
+ * @format
+ */
+:root {
+  --primary-color: #6464dc;
+  --secondary-color: #56b5e5;
+  --background-color: #c0c0c0;
+  --accent-color1: #570baa;
+  --accent-color2: #1c11c4;
+  --text-color: white;
+  --text-color-secondary: #d9d9d9;
+  --extra: #3233c1;
+}
+/* Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  /* max-width: 1200px; */
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header img {
+  width: 120px; /* Adjust logo width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Main Styles */
+main {
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+h1 {
+  color: var(--extra); /* Dark blueish purple */
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--secondary-color); /* Dark purple */
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content img {
+  width: 80px; /* Adjust logo width in footer */
+  height: auto;
+  margin-right: 20px;
+}
+
+.footer-text {
+  flex-grow: 1;
+}
+
+/* menu */
+nav {
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav a:hover {
+  background-color: var(--accent2-color);
+  color: black;
+}
+.navigation a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navigation a.active {
+  border-bottom: 2px solid var(--accent-color1); /* Active link color */
+}
+
+.navigation a:hover {
+  border-bottom: 2px solid var(--accent-color2);
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.open {
+  display: block;
+}
+
+#menu {
+  display: inline;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 0.25rem 2vw;
+}
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "X";
+  /* background-color: var(--greenish); How do I make the background color the same as the menu */
+}
+
+/* ---------------------------------------------- */
+
+/* DOWNLOAD PAGE */
+/* Styling for sound entries and Download Page */
+.hero {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* height: 300px; Set a fixed height for the hero container */
+}
+
+.hero img {
+  width: 100%; /* Set the image width */
+  height: auto; /* Maintain aspect ratio */
+  /* border-radius: 8px; */ /* Optionally apply border-radius */
+  display: block; /* Ensure the image is displayed as a block element */
+  /* max-width: 100%; Ensure image does not exceed container width */
+}
+.sound-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items at start and end */
+  padding: 20px;
+  border-bottom: 1px solid var(--accent-color1);
+  color: var(--text-color);
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-player {
+  width: 50%; /* Fixed width for audio player */
+  max-width: 100%; /* Ensure audio player doesn't exceed its container */
+  margin-left: auto;
+}
+
+.author {
+  font-size: 14px;
+}
+
+/* Custom colors for alternate rows */
+.sound-entry:nth-child(even):hover {
+  background-color: var(
+    --primary-color
+  ); /* Dark purple background color for even rows */
+}
+
+.sound-entry:nth-child(odd):hover {
+  background-color: var(
+    --secondary-color
+  ); /* Dark blue background color for odd rows */
+}
+
+/* Additional styling for hover effect */
+.sound-entry:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
+
+.download-button {
+  margin: auto;
+  background-color: var(--extra);
+  border-radius: 10px;
+  color: var(--text-color);
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+/* ---------------------------------------------- */
+
+/* ADD SOUND's Styles */
+
+/* Center the form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 10px; /* Optional border-radius */
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+/* Align labels to the left and ensure they are on the same line as inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  background-color: var(--primary-color); /* Adjust button color as needed */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Adjust hover color as needed */
+}
+/* Center the submit button */
+.form-group.submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------------------------------------------- */
