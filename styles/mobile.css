@@ -277,3 +277,44 @@ input[type="submit"]:hover {
 }
 
 /* ---------------------------------------------- */
+/* Privacy Policy Page */
+.privacy-policy {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+.privacy-policy p {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.privacy-policy ul {
+  list-style-type: none;
+  padding-left: 5px;
+  margin: 0;
+}
+.privacy-policy h2 {
+  margin-top: 2em;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.space {
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+  padding: 0.5em;
+  font-size: 10px;
+}
