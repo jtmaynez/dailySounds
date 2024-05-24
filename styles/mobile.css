@@ -318,3 +318,7 @@ input[type="submit"]:hover {
   padding: 0.5em;
   font-size: 10px;
 }
+.sm {
+  width: 500px;
+  height: auto;
+}
