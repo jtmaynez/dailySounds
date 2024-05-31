@@ -59,6 +59,10 @@ p {
 }
 
 /* Footer Styles */
+.sm img {
+  width: 30px;
+  height: auto;
+}
 footer {
   background-color: var(--secondary-color); /* Dark purple */
   color: var(--text-color);
@@ -70,7 +74,7 @@ footer {
   align-items: center;
 }
 
-.footer-content img {
+.logo img {
   width: 80px; /* Adjust logo width in footer */
   height: auto;
   margin-right: 20px;
@@ -83,8 +87,6 @@ footer {
 /* menu */
 nav {
   background-color: var(--primary-color);
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 nav a {
@@ -97,10 +99,6 @@ nav a {
   font-family: "Roboto", sans-serif;
 }
 
-nav a:hover {
-  background-color: var(--accent2-color);
-  color: black;
-}
 .navigation a {
   color: var(--text-color);
   text-decoration: none;
@@ -114,21 +112,17 @@ nav a:hover {
 
 .navigation a:hover {
   border-bottom: 2px solid var(--accent-color2);
+  background-color: var(--accent2-color);
+  color: black;
 }
 
 .navigation {
   display: none;
+  margin: 0 auto;
 }
 
 .navigation.open {
   display: block;
-}
-.navigation input[type="text"] {
-  float: left;
-  padding: 6px;
-  border: none;
-  margin: 5em;
-  font-size: 17px;
 }
 #menu {
   display: inline;
@@ -147,9 +141,17 @@ nav a:hover {
 
 #menu.open::before {
   content: "X";
+
   /* background-color: var(--greenish); How do I make the background color the same as the menu */
 }
 
+.navigation input[type="text"] {
+  float: left;
+  padding: 6px;
+  border: none;
+  margin: 5em;
+  font-size: 17px;
+}
 /* ---------------------------------------------- */
 
 /* DOWNLOAD PAGE */
@@ -238,6 +240,9 @@ form {
 }
 
 /* Align labels to the left and ensure they are on the same line as inputs */
+/* form {
+  max-width: 400px;
+} */
 .form-group {
   margin-bottom: 15px;
 }
@@ -250,7 +255,9 @@ label {
 
 input[type="text"],
 textarea,
-input[type="file"] {
+input[type="file"],
+input[type="password"],
+input[type="email"] {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
@@ -317,8 +324,4 @@ input[type="submit"]:hover {
   font-style: italic;
   padding: 0.5em;
   font-size: 10px;
-}
-.sm {
-  width: 500px;
-  height: auto;
 }

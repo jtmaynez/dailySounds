@@ -43,20 +43,61 @@
       <a href="account.html">My Account</a>
     </nav>
     <main>
-      <h1>Daily Sound Effects</h1>
-      <div class="hero">
-        <picture>
-          <img
-            src="images/hero_ds.webp"
-            alt="The hero picture"
-            width="1000"
-            height="500"
-            loading="lazy"
+      <h1>Account Information</h1>
+      <form method="get" action="record.html" class="recorded">
+        <label
+          >First & Last Name*<input
+            type="text"
+            name="name"
+            required
+            placeholder="John Doe"
+        /></label>
+        <label
+          >Username*<input type="text" id="username" name="username" required
+        /></label>
+        <label
+          >Password*<input
+            type="password"
+            id="password"
+            name="password"
+            required
+            pattern="[a-z0-9]{8,}"
+            title="Eight or more alpha-numeric characters"
+            placeholder="At least 8 alpha-numeric characters"
+        /></label>
+        <label
+          >Confirm Password*
+          <input
+            type="password"
+            id="password_repeat"
+            name="password_repeat"
+            required
+            title="Password must match"
           />
-        </picture>
-      </div>
-      <div id="soundContainer"></div>
+        </label>
+        <div id="formmessage"></div>
+        <label
+          >Email*<input
+            type="email"
+            id="email"
+            name="email"
+            required
+            title="Please enter a valid email address"
+            placeholder="janedoe@example.com"
+        /></label>
+
+        <label>
+          <input
+            type="submit"
+            value="Propose Information"
+            id="submit"
+            onclick="submitForm()"
+          />
+          <!-- Don't have an onclick Javascript function -->
+        </label>
+      </form>
     </main>
+
     <footer>
       <div class="footer-content">
         <div class="logo">
